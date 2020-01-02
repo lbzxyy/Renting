@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+import { getRecommendList } from '../../api/home/index';
 
 Page({
   data: {
@@ -16,6 +17,15 @@ Page({
     })
   },
   onLoad: function () {
+    let data = {
+      currentPage: 1,
+      pageSize: 10,
+      located: false
+    }
+    getRecommendList(data).then(res => {
+      console.log(res,'res11111')
+    })
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

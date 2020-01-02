@@ -6,7 +6,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "搜房宝",
+    "navigationBarTitleText": "租赁帮",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
