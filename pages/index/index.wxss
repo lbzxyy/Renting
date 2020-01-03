@@ -4,3 +4,25 @@
   background-image: url(https://cdn-1.sofb.com/sofb-miniprogram/static/imgs/img-home-bg@3x.png);
   background-size: 100% 100%;
 }
+.container .top-tab {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30rpx 20rpx;
+  align-items: center;
+}
+.container .top-tab .text {
+  width: 330rpx;
+  height: 160rpx;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container .top-tab .left {
+  background-image: url("https://cdn-1.sofb.com/sofb-miniprogram/static/imgs/img-home-room@2x.png");
+}
+.container .top-tab .right {
+  background-image: url("https://cdn-1.sofb.com/sofb-miniprogram/static/imgs/img-home-renting@2x.png");
+}

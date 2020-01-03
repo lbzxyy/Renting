@@ -1,6 +1,16 @@
 <!--index.wxml-->
 <view class="container">
+  <!-- 首页头部背景图和搜索框 -->
   <view class="search">
    
+  </view>
+  <!-- 分类 -->
+  <view class="top-tab">
+    <view class="text left">
+      二手房
+    </view>
+    <view class="text right">
+      安心租房
+    </view>
   </view>
 </view>
