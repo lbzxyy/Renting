@@ -39,5 +39,12 @@ Page({
       desc: 'desc', // 分享描述
       path: 'path' // 分享路径
     }
+  },
+  // 切换 租房类型
+  switchType: function(e) {
+    this.setData({
+      rentType: e.currentTarget.dataset.type
+    })
   }
+
 })

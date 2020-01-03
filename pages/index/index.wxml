@@ -20,8 +20,8 @@
       推荐房源
     </view>
     <view class="recommand-right">
-      <text class="second {{ rentType==='house'? 'active': ''}}">二手房</text>
-      <text class="rent {{ rentType==='rent'? 'active': ''}}">租房</text>
+      <text class="second {{ rentType==='house'? 'active': ''}}" data-type="house" bind:tap="switchType">二手房</text>
+      <text class="rent {{ rentType==='rent'? 'active': ''}}" data-type="rent" bind:tap="switchType">租房</text>
     </view>
   </view>
 </view>
