@@ -1,0 +1,32 @@
+.listItem {
+  width: 100%;
+  padding: 30rpx;
+}
+.listItem .item {
+  display: flex;
+}
+.listItem .item .image {
+  width: 240rpx;
+  height: 180rpx;
+}
+.listItem .item .image image {
+  width: 100%;
+  height: 100%;
+}
+.listItem .item .info {
+  flex: 1;
+  padding: 0 30rpx;
+}
+.listItem .item .info .info-title {
+  font-size: 28rpx;
+  color: #475266;
+  font-weight: 700;
+}
+.listItem .item .info .info-detail {
+  font-size: 24rpx;
+  color: #878D99;
+}
+.listItem .item .info .info-price {
+  font-size: 24rpx;
+  color: #A4A4A4;
+}

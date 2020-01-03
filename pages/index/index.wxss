@@ -52,3 +52,6 @@
 .container .recommand .recommand-right .second {
   margin-right: 30rpx;
 }
+.container .houseList {
+  width: 100%;
+}

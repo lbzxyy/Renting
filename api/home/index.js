@@ -5,3 +5,7 @@ const _request = new request;
 export function getRecommendList(data) {
    return  _request.getRequest('/rent/search/recommendList',data)
 }
+// 获取二手房房源数据
+export function getHouseList(data) {
+   return _request.getRequest('/house/list',data)
+}

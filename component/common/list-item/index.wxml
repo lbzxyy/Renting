@@ -1,0 +1,27 @@
+<view class="listItem">
+    <!-- 二手房源item -->
+    <view class="item">
+        <view class="image">
+            <image 
+                src="{{listItem.imgUrl?listItem.imgUrl:emptyImg}}" 
+                mode="aspectFit|aspectFill|widthFix" lazy-load="false" 
+                width="240rpx"
+                hight="180rpx"
+            >
+            </image>
+        </view>
+        <view class="info">
+            <view class="info-title">{{listItem.title}}</view>
+            <view class="info-detail">
+                {{listItem.bedRoom}}室{{listItem.livingRoom}}厅{{'/'+listItem.buildArea}}㎡{{'/'+listItem.direction}}{{'/' + listItem.gardenName}}
+            </view>
+            <view class="info-price">
+                <text>{{listItem.price}}万</text>
+                <text>{{listItem.unitPrice}}元/㎡</text>
+            </view>
+        </view>
+
+    </view>
+    <!-- 租房房源item -->
+    <view></view>
+</view>

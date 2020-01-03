@@ -1,13 +1,14 @@
 
-// import { get}
+import { getHouseList } from "../../api/home/index"
 
 Page({
   data:{
     rentType: 'house', // 默认选中二手房  样式标示
+    houseList: [], // 二手房房源数据
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
-    
+    this.getHouseList(1); // 获取二手房房源数据
   },
   onReady:function(){
     // 生命周期函数--监听页面初次渲染完成
@@ -44,6 +45,23 @@ Page({
   switchType: function(e) {
     this.setData({
       rentType: e.currentTarget.dataset.type
+    })
+  },
+  // 获取二手房数据
+  getHouseList: function(pageNum) {
+    let params = {
+      currentPage: pageNum,
+      keyword: "",
+      condition: ""
+    };
+    getHouseList(params).then( res => {
+      console.log(res,'res')
+      const {data: {items: houseList}} = res;
+      if(pageNum === 1) {
+        this.setData({
+          houseList
+        })
+      }
     })
   }
 

@@ -24,4 +24,8 @@
       <text class="rent {{ rentType==='rent'? 'active': ''}}" data-type="rent" bind:tap="switchType">租房</text>
     </view>
   </view>
+  <!-- 房源数据列表 -->
+  <view class="houseList">
+    <list-item wx:for="{{houseList}}" listItem="{{item}}" wx:key="id"></list-item>
+  </view>
 </view>
