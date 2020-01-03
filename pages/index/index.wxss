@@ -26,3 +26,29 @@
 .container .top-tab .right {
   background-image: url("https://cdn-1.sofb.com/sofb-miniprogram/static/imgs/img-home-renting@2x.png");
 }
+.container .top-bar {
+  width: 100%;
+  background: #F2F3F5;
+  height: 20rpx;
+}
+.container .recommand {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx;
+  color: #475266;
+}
+.container .recommand .recommand-left {
+  padding-left: 30rpx;
+  font-size: 36rpx;
+}
+.container .recommand .recommand-right {
+  padding-right: 30rpx;
+  font-size: 32rpx;
+}
+.container .recommand .recommand-right .active {
+  color: #6595F4;
+}
+.container .recommand .recommand-right .second {
+  margin-right: 30rpx;
+}

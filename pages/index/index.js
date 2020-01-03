@@ -3,7 +3,7 @@
 
 Page({
   data:{
-    
+    rentType: 'house', // 默认选中二手房  样式标示
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载

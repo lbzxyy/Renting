@@ -13,4 +13,15 @@
       安心租房
     </view>
   </view>
+  <view class="top-bar"></view>
+  <!-- 推荐 -->
+  <view class="recommand">
+    <view class="recommand-left">
+      推荐房源
+    </view>
+    <view class="recommand-right">
+      <text class="second {{ rentType==='house'? 'active': ''}}">二手房</text>
+      <text class="rent {{ rentType==='rent'? 'active': ''}}">租房</text>
+    </view>
+  </view>
 </view>
